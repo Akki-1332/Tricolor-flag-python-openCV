@@ -14,11 +14,15 @@ cv2.imwrite("white_color.jpg" , white)
 green = np.zeros([135, 600, 3])
 green[:, :] =  [0, 255, 0]
 cv2.imwrite("green_color.jpg" , green)
+
+#Combining Images
 s = cv2.imread("saffron_color.jpg")
 w  = cv2.imread("chakr.jpg")
 g = cv2.imread("green_color.jpg")
 tricolor = np.vstack( (s, w, g) )
-# tricolor[142:258 , 200:400]=chakr[142:258 , 200:400]
+
+#Showing INDIAN Flag
 cv2.imshow("hi", tricolor)
 cv2.waitKey()
 cv2.destroyWindow()
+
