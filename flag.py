@@ -24,5 +24,5 @@ tricolor = np.vstack( (s, w, g) )
 #Showing INDIAN Flag
 cv2.imshow("hi", tricolor)
 cv2.waitKey()
-cv2.destroyWindow()
+cv2.destroyAllWindows()
 
